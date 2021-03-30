@@ -1,0 +1,29 @@
+{
+  "name": "wasm-svelte-component",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@wasm-tool/rollup-plugin-rust": "^1.0.5",
+    "rollup": "^2.41.1",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.35.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "buffer": "^6.0.3"
+  }
+}
